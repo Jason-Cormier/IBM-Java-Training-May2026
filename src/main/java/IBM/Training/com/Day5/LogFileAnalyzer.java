@@ -26,8 +26,8 @@ public class LogFileAnalyzer {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		
 		try (
-			BufferedReader br = new BufferedReader(new FileReader("server.log"));
-			BufferedWriter bw = new BufferedWriter(new FileWriter("summary.txt"))
+			BufferedReader br = new BufferedReader(new FileReader("src/main/resources/server.log"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("src/main/resources/summary.txt"))
 		) {
 			String line;
 			

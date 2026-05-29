@@ -4,8 +4,8 @@ import java.io.*;
 public class StudentFile {
 	public static void main(String[] args) {
 		try (
-			BufferedReader br = new BufferedReader(new FileReader("student.csv"));
-			BufferedWriter bw = new BufferedWriter(new FileWriter("student.json"))
+			BufferedReader br = new BufferedReader(new FileReader("src/main/resources/student.csv"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("src/main/resources/student.json"))
 		) {
 			String line;
 			br.readLine();

@@ -1,0 +1,12 @@
+Log Summary Report
+------------------
+Total Entries: 2
+INFO: 1
+WARN: 0
+ERROR: 1
+
+Error Messages:
+- Disk failure
+
+Earliest Timestamp: 2026-05-01T10:00
+Latest Timestamp: 2026-05-01T10:03

@@ -14,7 +14,7 @@ class MalformedLogEntryException extends Exception {
 public class LogAnalyzer {
 
     public static void main(String[] args) {
-        //String filename = "resources/server.log";
+        //String filename = "src/main/resources/server.log";
     	String filename = args[0];
         Map<String, Integer> levelCount = new HashMap<>();
         levelCount.put("INFO", 0);
@@ -81,7 +81,7 @@ public class LogAnalyzer {
         }
 
         // Write summary
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("resources/summary.txt"))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/main/resources/summary.txt"))) {
             bw.write("Log Summary Report\n");
             bw.write("------------------\n");
             bw.write("Total Entries: " + (levelCount.get("INFO") + levelCount.get("WARN") + levelCount.get("ERROR")) + "\n");
