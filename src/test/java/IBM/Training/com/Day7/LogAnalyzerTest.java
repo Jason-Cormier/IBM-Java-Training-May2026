@@ -21,6 +21,7 @@ class LogAnalyzerTest {
 
     private final PrintStream originalOut = System.out;
     private ByteArrayOutputStream outputStream;
+    private LogAnalyzer la = new LogAnalyzer();
 
     @BeforeEach
     void setup() throws Exception {
